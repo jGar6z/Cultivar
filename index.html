@@ -2,7 +2,8 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/logo-menor-branco.png">
@@ -11,26 +12,210 @@
     
     <body>
         <!--Header-->
-        <header></header>
+        <header>
+            <a href="">
+                <img class="logo" src="assets/logo-maior-preto.png" alt="logo-maior-preto.png">
+            </a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="item" class="active" href="">Início</a></li>
+                    <li><a id="item" href="#services">Serviços</a></li>
+                    <li><a id="item" href="#about">Sobre nós</a></li>
+                    <li><a id="item" href="#locality">Localidade</a></li>
+                    <a href="#contact" class="btn">Contato</a>
+                </ul>
+            </nav>
+        </header>
 
         <main>
             <!--WhatsApp Floating Button-->
-            <section class="wpp-btn"></section>
+            <a href="https://wa.me/5535991088242?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
+                <section class="wpp-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <p>Entre em contato</p>
+                </section>
+            </a>
 
             <!--Main-->
-            <section class="main"></section>
+            <section class="main">
+                <div class="main-slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <div class="slide first">
+                            <img src="assets/main-bg-slide-1.jpg" alt="main-bg-slide-1.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/main-bg-slide-2.jpg" alt="main-bg-slide-2.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/main-bg-slide-3.jpg" alt="main-bg-slide-3.jpg">
+                        </div>
+
+                        <div class="navigation-auto"></div>
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
+                <div class="main-text">
+                    <h2 class="subtitle">CULTIVAR PULVERIZAÇÕES - TRÊS CORAÇÕES - MG</h2>
+                    <h1 class="title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam placeat nesciunt animi incidunt nisi accusantium dolore commodi cupiditate.</p>
+                    <div class="main-btns">
+                        <a class="btn">Saiba Mais</a>
+                        <a class="main-wpp-btn" href="https://wa.me/5535991088242?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Services-->
+            <section class="services" id="services">
+                <div class="services-text">
+                    <h1 class="title">Serviços que nós oferecemos</h1>
+                    <div class="dec"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ullam eum laudantium non rerum, aperiam eveniet incidunt dolor neque.</p>
+                </div>
+                <div class="services-section">
+                    <div class="services-container">
+                        <img class="services-container-bg" src="assets/services-mapping-img.jpg" alt="services-mapping-img.jpg">
+                        <div class="services-container-text">
+                            <h1 class="title">Mapeamento</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia modi, suscipit sed libero, maiores sequi nemo earum quo dolores ex dicta reiciendis omnis esse, eligendi maxime minus laboriosam accusamus.</p>
+                            <a href="#contact"><button class="btn">Solicitar Valor</button></a>
+                        </div>
+                    </div>
+                    <div class="services-container">
+                        <img class="services-container-bg" src="assets/services-pulverization-img.jpg" alt="services-pulverization-img.jpg">
+                        <div class="services-container-text">
+                            <h1 class="title">Pulverização</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia modi, suscipit sed libero, maiores sequi nemo earum quo dolores ex dicta reiciendis omnis esse, eligendi maxime minus laboriosam accusamus.</p>
+                            <a href="#contact"><button class="btn">Solicitar Valor</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!--About-->
-            <section class="about"></section>
+            <section class="about" id="about">
+                <img class="about-img" src="assets/about-img.png" alt="about-img.png">
+                
+                <div class="about-text">
+                    <h2 class="subtitle">QUEM SOMOS NÓS?</h2>
+                    <h1 class="title">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+                    <div class="dec"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, amet quos labore consectetur aspernatur corrupti quam! Aut ad voluptatum laudantium beatae quidem sequi, atque velit cum id iusto nulla voluptates!</p>
+                    <div class="about-text-section">    
+                        <div class="about-text-div">
+                            <span><ion-icon name="flash-outline"></ion-icon></span>
+                            <div>
+                                <h4>Rapidez</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolore.</p>
+                            </div>
+                        </div>
+                        <div class="about-text-div">
+                            <span><ion-icon name="medal-outline"></ion-icon></span>
+                            <div>
+                                <h4>Qualidade</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolore.</p>
+                            </div>
+                        </div>
+                        <div class="about-text-div">
+                            <span><ion-icon name="cash-outline"></ion-icon></span>
+                            <div>
+                                <h4>Economia</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!---->
-            <section class=""></section>
+            <!--Locality-->
+            <section class="locality" id="locality">
+                <div class="locality-div">
+                    <img src="assets/locality-img.png" alt="locality-img.png">
+                </div>
 
-            <!--Services-->
-            <section class="services"></section>
+                <div class="locality-div">
+                    <h1 class="title">Atuamos em toda a região de Minas Gerais</h1>
+                    <div class="dec"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis placeat delectus quia unde beatae nesciunt, culpa molestias ratione iste provident. Facilis, architecto accusantium! Omnis ab accusamus ipsam quasi magnam!</p>
+                    <a href="#contact"><button class="btn">Entrar em contato →</button></a>
+                </div>
+            </section>
 
-            <!---->
-            <section class=""></section>
+            <!--Contact-->
+            <section class="contact" id="contact">
+                <div class="contact-text">
+                    <h1 class="title">Entre em contato</h1>
+                    <div class="dec"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores omnis officiis harum, enim, odio eveniet aspernatur dicta.</p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="email.php" method="POST">
+                        <div class="contact-form-div">
+                            <input class="field" type="name" placeholder="Nome" required>
+                            <input class="field" type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="contact-form-div">
+                            <select class="field" name="service" class="select-field" required>
+                                <option selected disabled value="">Selecione o serviço</option>
+                                <option value="service-1">Mapeamento</option>
+                                <option value="service-2">Pulverização</option>
+                                <option value="service-3">Outro</option>
+                            </select>
+
+                            <select class="field" name="budget" class="select-field" required>
+                                <option selected disabled value="">Escolha seu orçamento</option>
+                                <option value="budget-1">Menos de R$1000</option>
+                                <option value="budget-2">Entre R$1000 e R$5000</option>
+                                <option value="budget-3">Mais de R$5000</option>
+                                <option value="budget-4">Não sei</option>
+                            </select>
+                        </div>
+
+                        <div class="contact-form-div">
+                            <textarea class="field" name="message" placeholder="Mensagem" required></textarea>
+                        </div>
+
+                        <div class="contact-form-bottom">
+                            <div class="contact-social-medias">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </div>
+                            <button class="btn" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!--Call Action-->
+            <section class="call-action">
+                <div class="call-action-text">
+                    <h1 class="title">OBTENHA O VALOR EM SEU</h1>
+                    <h1 class="title" style="color: #7ca04f;">PRIMEIRO SERVIÇO</h1>
+                    <a class="main-wpp-btn" href="https://wa.me/5535991088242?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer"><button class="btn">Enviar Mensagem</button></a>    
+                </div>
+            </section>
         </main>
 
         <!--Script Reference-->
@@ -41,6 +226,61 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
         <!--Footer-->
-        <footer></footer>
+        <footer>
+            <div class="footer-main">
+                <div class="footer-main-principal">
+                    <a href="">
+                        <img class="logo" src="assets/logo-maior-preto.png" alt="logo-maior-preto.png">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt modi velit eos illo natus eveniet nobis.</p>
+                </div>
+
+                <div class="footer-main-div">
+                    <h2 class="subtitle">Menu</h2>
+                    <a href="">
+                        <p>Início</p>
+                    </a>
+                    <a href="#services">
+                        <p>Serviços</p>
+                    </a>
+                    <a href="#about">
+                        <p>Sobre nós</p>
+                    </a>
+                    <a href="#locality">
+                        <p>Localidade</p>
+                    </a>
+                    <a href="#contact">
+                        <p>Contato</p>
+                    </a>
+                </div>
+
+                <div class="footer-main-div">
+                    <h2 class="subtitle">Entre em contato</h2>
+                    <p>Três Corações - MG</p>
+                    <p>(35) 93300 - 7120</p>
+                    <p>cultivarpulverizacoes@gmail.com</p>
+                </div>
+
+                <div class="footer-main-contact">
+                    <h2 class="subtitle">Nossas redes sociais</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatem repudiandae commodi nulla.</p>
+                    <div class="footer-social-medias">
+                        <a href="https://wa.me/5535991088242?text=Ol%C3%A1%2C%20venho%20pelo%20site.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cultivar Pulverizações. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </body>
 </html>

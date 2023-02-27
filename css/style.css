@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+/*Universal*/
+.title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.txt {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #7ca04f;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 350ms;
+}
+
+.dec {
+    content: "";
+    background-color: #7ca04f;
+    height: 3px;
+    width: 70px;
+    margin: 10px 0;
+}
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 15px 100px;
+    z-index: 1;
+}
+
+header .logo {
+    width: 200px;
+}
+
+header #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header #menu #item {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: #636363;
+    margin: 0 1vw;
+    padding: 0 5px;
+}
+
+header #menu #item.active {
+    color: #000;
+    font-weight: 600;
+}
+
+header .btn {
+    margin-left: 48px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/*WhatsApp Floating Button*/
+.wpp-btn {
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    bottom: 30px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    background-color: #7ca04f;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.wpp-btn ion-icon {
+    font-size: 26px;
+    position: absolute;
+    left: 12px;
+    color: #fff;
+}
+
+.wpp-btn p {
+    margin-left: 15px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    transition-delay: 0.2s;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    align-items: center;
+    height: 550px;
+}
+
+.main .main-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 40%;
+    gap: 10px;
+    z-index: 1;
+}
+
+.main .main-text .subtitle {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main .main-text .title {
+    font-size: 36px;
+}
+
+.main .main-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.main .main-btns .btn {
+    padding: 0 25px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.main .main-btns .main-wpp-btn {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 350ms;
+}
+
+.main .main-btns ion-icon {
+    font-size: 22px;
+    color: #7ca04f;
+    transition: 350ms;
+}
+
+/*Main Slider*/
+.main .main-slider {
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+}
+
+.main .slides {
+    width: 300%;
+    display: flex;
+}
+
+.main .slides input {
+    display: none;
+}
+
+.main .slide {
+    width: 33.33%;
+    position: relative;
+    transition: 2s;
+}
+
+.main .slide img {
+    width: 100vw;
+}
+
+.main #radio1:checked~.first {
+    margin-left: 0;
+}
+
+.main #radio2:checked~.first {
+    margin-left: -33.33%;
+}
+
+.main #radio3:checked~.first {
+    margin-left: -66.66%;
+}
+
+/*About*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 28px;
+    gap: 50px;
+}
+
+.about .about-img {
+    width: 500px;
+}
+
+.about .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.about .about-text .subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #636363;
+}
+
+.about .about-text .about-text-section {
+    margin-top: 10px;
+}
+
+.about .about-text .about-text-div {
+    display: flex;
+    margin-top: 15px;
+}
+
+.about .about-text-div ion-icon {
+    font-size: 22px;
+    padding: 8px;
+    margin-right: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    color: #6b834e;
+}
+
+.about .about-text-div h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*Services*/
+.services {
+    padding: 42px;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.services .services-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services .services-text .dec {
+    width: 90px;
+}
+
+.services .services-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services .services-section .services-container {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.services .services-container .services-container-bg {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.services .services-container .services-container-text {
+    text-align: center;
+    padding: 28px;
+}
+
+.services .services-container .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services .services-container .btn {
+    margin-top: 15px;
+}
+
+/*Locality*/
+.locality {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 0;
+}
+
+.locality .locality-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 35%;
+}
+
+.locality .locality-div img {
+    width: 400px;
+}
+
+.locality .locality-div .btn {
+    width: max-content;
+    margin-top: 15px;
+}
+
+/*Contact*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 42px 28px;
+    margin-bottom: 48px;
+}
+
+.contact .contact-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact .contact-form .contact-form-div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact .contact-form-div .field {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    outline: none;
+    padding: 7px;
+    width: 100%;
+    border: 1px solid #8d8d8d;
+}
+
+.contact .contact-form-div textarea {
+    min-height: 100px;
+    min-width: 100%;
+}
+
+.contact .contact-form .contact-form-bottom {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+}
+
+.contact .contact-form-bottom .contact-social-medias {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .contact-form-bottom ion-icon {
+    font-size: 20px;
+    background-color: #7ca04f;
+    padding: 7px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.contact .contact-form-bottom ion-icon:hover {
+    background-color: #6b834e;
+}
+
+/*Call Action*/
+.call-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/call-action-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.call-action .call-action-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.call-action .call-action-text .btn {
+    margin: 25px 0;
+    width: max-content;
+}
+
+.call-action .call-action-text .subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.call-action .call-action-text p {
+    padding: 2px;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+footer .footer-main {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 28px;
+}
+
+footer .footer-main-principal {
+    width: 30%;
+}
+
+footer .footer-main-principal .logo {
+    width: 230px;
+    padding-bottom: 10px;
+}
+
+footer .footer-main .footer-main-div {
+    width: 20%;
+}
+
+footer .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+footer .footer-main-contact {
+    width: 30%;
+}
+
+footer p {
+    padding: 2px 0;
+}
+
+footer .footer-social-medias {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+footer .footer-social-medias ion-icon {
+    font-size: 22px;
+    padding: 7px;
+    color: #fff;
+    background-color: #7ca04f;
+    border-radius: 50%;
+    transition: 350ms;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+
+/*Responsive PC*/
+@media screen and (min-width:1024px) {
+    /*Universal*/
+    .btn:hover {
+        background-color: #6b834e;
+    }
+
+    /*Header*/
+    header #menu #item::after {
+        content: "";
+        position: absolute;
+        background-color: #000;
+        height: 1.5px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.4s;
+    }
+
+    header #menu #item:hover {
+        color: #000;
+    }
+
+    header #menu #item:hover::after {
+        width: 100%;
+    }
+
+    /*Wpp Button*/
+    .wpp-btn:hover {
+        width: 250px;
+    }
+
+    .wpp-btn:hover p {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /*Main*/
+    .main .main-btns .main-wpp-btn:hover {
+        background-color: #7ca04f;
+    }
+
+    .main .main-btns .main-wpp-btn:hover ion-icon {
+        color: #fff;
+    }
+
+    /*Footer*/
+    footer .footer-social-medias ion-icon:hover {
+        background-color: #6b834e;
+    }
+}
+
+/*Responsive Tablet*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    /*Header*/
+    header {
+        padding: 10px 25px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .logo {
+        content: url(../assets/logo-menor-preto.png);
+        width: 70px;
+    }
+
+    /*Main*/
+    .main {
+        height: max-content;
+    }
+
+    .main .slide img {
+        height: 500px;
+    }
+
+    .main .main-text {
+        width: 60%;
+        margin-top: 110px;
+    }
+
+    /*Services*/
+    .services .services-text {
+        width: 80%;
+    }
+
+    .services .services-section .services-container {
+        width: 45%;
+    }
+
+    /*About*/
+    .about .about-img {
+        display: none;
+    }
+
+    .about .about-text {
+        width: 100%;
+    }
+
+    /*Locality*/
+    .locality .locality-div {
+        width: 45%;
+    }
+
+    .locality .locality-div img {
+        width: 300px;
+    }
+
+    /*Contact*/
+    .contact .contact-text {
+        width: 80%;
+    }
+
+    .contact .contact-form {
+        width: 85%;
+    }
+
+    /*Footer*/
+    footer .footer-main {
+        flex-wrap: wrap;
+    }
+    footer .footer-main .footer-main-principal {
+        width: 30%;
+    }
+
+    footer .footer-main .footer-main-div {
+        width: 30%;
+    }
+
+    footer .footer-main .footer-main-contact {
+        width: 30%;
+    }
+}
+
+/*Responsive Smartphone*/
+@media screen and (max-width: 767px) {
+    /*Header*/
+    header {
+        position: static;
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 150px;
+    }
+
+    header .btn {
+        display: none;
+    }
+
+    header #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        left: 0;
+        background: #fff;
+        border-top: 0.4px solid #878a8f;
+        transition: 0.6s;
+        z-index: 10000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    header #menu #item {
+        display: block;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 0.4px solid #878a8f;
+    }
+
+    header #btn-mobile {
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*Main*/
+    .main {
+        height: max-content;
+        background-image: url(../assets/main-bg-smartphone.jpg);
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .main .main-slider {
+        display: none;
+    }
+
+    .main .main-text {
+        width: 100%;
+        margin: 48px 28px;
+    }
+
+    .main .main-text .subtitle, .main .main-text .title, .main .main-text p {
+        color: #fff;
+    }
+
+    /*Services*/
+    .services {
+        padding: 48px 28px;
+        gap: 38px;
+    }
+
+    .services .services-text {
+        width: 100%;
+    }
+
+    .services .services-section {
+        flex-direction: column;
+    }
+
+    .services .services-section .services-container {
+        width: 100%;
+    }
+
+    /*About*/
+    .about {
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+
+    .about .about-text {
+        width: 100%;
+    }
+
+    .about .about-text-div ion-icon {
+        font-size: 26px;
+    }
+
+    .about .about-img {
+        width: 300px;
+    }
+
+    /*Locality*/
+    .locality {
+        flex-direction: column-reverse;
+        gap: 42px;
+        padding: 28px;
+        text-align: center;
+    }
+
+    .locality .locality-div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .locality .locality-div img {
+        width: 280px;
+    }
+
+    /*Contact*/
+    .contact .contact-text {
+        width: 100%;
+    }
+
+    .contact .contact-form {
+        width: 100%;
+    }
+
+    .contact .contact-form .contact-form-div {
+        flex-direction: column;
+    }
+
+    /*Call Action*/
+    .call-action {
+        padding: 0 28px;
+        height: 400px;
+    }
+
+    .call-action .call-action-text {
+        margin-top: 140px;
+    }
+
+    .call-action .call-action-text .title {
+        font-size: 24px;
+    }
+
+    /*Footer*/
+    footer .footer-main {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    footer .footer-main .footer-main-principal {
+        width: 100%;
+    }
+
+    footer .footer-main .footer-main-div {
+        width: 100%;
+    }
+
+    footer .footer-main .footer-main-contact {
+        width: 100%;
+    }
+
+    footer .footer-bottom {
+        padding-bottom: 58px;
+        padding-top: 0;
+    }
+}
