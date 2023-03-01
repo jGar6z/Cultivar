@@ -160,7 +160,7 @@ header .btn {
 }
 
 .main .main-text .title {
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .main .main-btns {
@@ -378,6 +378,20 @@ header .btn {
     width: 40%;
 }
 
+.contact .contact-dec {
+    position: absolute;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.contact .contact-dec-left {
+    left: 0;
+}
+
+.contact .contact-dec-right {
+    right: 0;
+}
+
 .contact .contact-form {
     display: flex;
     flex-direction: column;
@@ -530,8 +544,7 @@ footer .footer-bottom {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 25px;
+    padding: 28px;
 }
 
 /*Responsive PC*/
@@ -606,12 +619,29 @@ footer .footer-bottom {
     }
 
     .main .slide img {
-        height: 500px;
+        height: 600px;
+    }
+
+    .main .slide .img-1 {
+        content: url(../assets/main-bg-tablet-1.jpg);
+    }
+
+    .main .slide .img-2 {
+        content: url(../assets/main-bg-tablet-2.jpg);
+    }
+
+    .main .slide .img-3 {
+        content: url(../assets/main-bg-tablet-3.jpg);
     }
 
     .main .main-text {
         width: 60%;
         margin-top: 110px;
+        margin-left: 72px;
+    }
+
+    .main .main-text .title {
+        font-size: 32px;
     }
 
     /*Services*/
@@ -643,27 +673,32 @@ footer .footer-bottom {
 
     /*Contact*/
     .contact .contact-text {
-        width: 80%;
+        width: 75%;
+    }
+
+    .contact .contact-dec {
+        height: 250px;
     }
 
     .contact .contact-form {
-        width: 85%;
+        width: 75%;
     }
 
     /*Footer*/
     footer .footer-main {
         flex-wrap: wrap;
     }
+
     footer .footer-main .footer-main-principal {
-        width: 30%;
+        width: 40%;
     }
 
     footer .footer-main .footer-main-div {
-        width: 30%;
+        width: 40%;
     }
 
     footer .footer-main .footer-main-contact {
-        width: 30%;
+        width: 40%;
     }
 }
 
@@ -781,14 +816,11 @@ footer .footer-bottom {
         margin: 48px 28px;
     }
 
-    .main .main-text .subtitle, .main .main-text .title, .main .main-text p {
-        color: #fff;
-    }
-
     /*Services*/
     .services {
         padding: 48px 28px;
         gap: 38px;
+        margin-top: 0;
     }
 
     .services .services-text {
@@ -841,6 +873,10 @@ footer .footer-bottom {
     /*Contact*/
     .contact .contact-text {
         width: 100%;
+    }
+
+    .contact .contact-dec {
+        display: none;
     }
 
     .contact .contact-form {
