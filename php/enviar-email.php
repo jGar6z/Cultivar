@@ -3,6 +3,8 @@
     $nome = $_POST['name'];
     $email = $_POST['email'];
     $mensagem = $_POST['message'];
+    $servico = $_POST['service'];
+    $orcamento = $_POST['budget'];
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s');
 
@@ -11,6 +13,8 @@
         <html>
         <p><b>Nome: </b>$nome</p>
         <p><b>E-mail: </b>$email</p>
+        <p><b>Serviço: </b>$servico</p>
+        <p><b>Orçamento: </b>$orcamento</p>
         <p><b>Mensagem: </b>$mensagem</p>
         <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
         </html>
