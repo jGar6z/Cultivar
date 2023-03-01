@@ -1,8 +1,8 @@
 <?php
     //Variáveis
-    $nome = $_POST['nome'];
+    $nome = $_POST['name'];
     $email = $_POST['email'];
-    $mensagem = $_POST['mensagem'];
+    $mensagem = $_POST['message'];
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s');
 
