@@ -8,7 +8,7 @@
     $data_envio = date('d/m/Y');
     $hora_envio = date('H:i:s');
 
-    //Compo E-mail
+    //Campo do Email
     $arquivo = "
         <html>
         <p><b>Nome: </b>$nome</p>
@@ -21,7 +21,9 @@
     ";
   
     //Emails para quem será enviado o formulário
-    $destino = "edipojoseoliveira@gmail.com"; //Obrigatório ser email da hospedagem
+    $destino = "contato@cultivarpulverizacoes.com";
+    
+    //Obrigatório ser email da hospedagem
     $assunto = "Contato pelo Site";
 
     //Exibição correta dos caracteres

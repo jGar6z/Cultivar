@@ -816,6 +816,18 @@ footer .footer-bottom {
         margin: 48px 28px;
     }
 
+    .main .main-text .subtitle {
+        font-size: 12px;
+    }
+
+    .main .main-text .title {
+        font-size: 30px;
+    }
+
+    .main .main-text .txt {
+        font-size: 14px;
+    }
+
     /*Services*/
     .services {
         padding: 48px 28px;
